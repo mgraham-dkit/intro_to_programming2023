@@ -27,7 +27,7 @@ def guessing_game(difficulty):
         if guess == number:
             print("You have guessed the right number!")
             print(f"It took {attempts+1} attempts to guess correctly")
-            break
+            return True
         else:
             attempts+=1
             if attempts == max_attempts:
@@ -35,8 +35,11 @@ def guessing_game(difficulty):
             else:
                 print(f"Incorrect. You have {max_attempts - attempts} attempts left.")
 
+    return False
 
 keep_running = True
+game_count = 0
+win_count = 0
 while keep_running:
     print("Please choose one of the following options: ")
     print("1) Guessing game")
@@ -45,6 +48,7 @@ while keep_running:
     
     match choice.lower():
         case "1":
+            game_count += 1
             print("Please select one of the following difficulty levels:")
             print("1) easy: 10 guesses at a number between 1 and 10")
             print("2) medium: 4 guesses at a number between 1 and 20")
@@ -60,9 +64,14 @@ while keep_running:
                 case _:
                     print("You didn't select a valid option. Since menus are a bit tough for you, I'll default you to easy mode...")
                     level = "easy"
-            guessing_game(level)
+            result = guessing_game(level)
+            print(difficulty)
+            if result:
+                win_count+=1
         case "quit":
             print("Aww, ok. See you next time!")
             keep_running = False
         case _:
             print("Please select one of the options offered.")
+            
+print(f"You won {win_count} of {game_count} attempts")
