@@ -1,0 +1,16 @@
+Where are you taking the grades in from?
+    Answer: User
+How do you take in a single grade from that source?
+    Answer: input function: input("Please enter a grade:")
+What do you store it as?
+    Answer: Number, so either int or float
+        More specific: Grades can be decimal, so float!
+Do you need to do this many times over?
+    Answer: Problem specified gradeS (plural)
+            so we need to take in many
+What sort of control structure can you use? (if/match/for/while)
+    Answer: Need to repeat, so use a loop (for or while)
+        More specific: No limit mentioned on number of grades, so
+                        use while so the user can enter
+                        an unspecified number and end
+                        when they are ready
