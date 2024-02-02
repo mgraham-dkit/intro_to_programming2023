@@ -1,0 +1,9 @@
+Remember count of h = 0
+
+for every letter in the text 
+	look at letter and if it equals "h"
+		add one to h count tally
+	otherwise
+		add 0 to the h count tally
+		
+print out our h count tally
