@@ -21,11 +21,12 @@ for i in range(len(names_tuple)):
 for i, name in enumerate(names_tuple):
     # Print the current position and the current name
     print(f"{i}: {name}")
-    
- 
- 
-    
-    
-    
-    
+
+# Equivalent to above loop (display name AND position), but achieved
+# without using enumerate
+counter = 0
+for name in names_tuple:
+    # Print the current position and the current name
+    print(f"{counter}: {name}")
+    counter += 1
     
