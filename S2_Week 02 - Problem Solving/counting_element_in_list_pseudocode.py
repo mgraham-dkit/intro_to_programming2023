@@ -3,8 +3,8 @@ input: 	List of floats (grades)
         
 Pseudocode:
 Create counter for value and set to 0
-for each grade in the grades list
-    Check if current grade equals value being counted
+for each grade in the grades list:
+    if current grade equals value being counted:
         If so, add ONE to counter for value
 
 Display counter for this value
