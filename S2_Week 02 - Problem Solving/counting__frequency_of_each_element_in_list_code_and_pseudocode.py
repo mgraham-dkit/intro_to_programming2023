@@ -7,9 +7,9 @@ for value in grades:
     counter = 0
     # for each grade in the grades list
     for grade in grades:
-        # Check if current grade equals value being counted
+        # if current grade equals value being counted
         if grade == value:
-            # If so, add ONE to counter for value
+            # add ONE to counter for value
             counter = counter + 1
 
     # Display counter for this value

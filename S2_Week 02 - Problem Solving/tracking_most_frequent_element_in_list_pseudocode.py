@@ -4,15 +4,15 @@ input: 	List of floats (grades)
 Pseudocode:
 Create a variable to track highest number of instances and set to 0
 Create a variable to track the most frequent grade and set to None
-for each value in grades list
+for each value in grades list:
     Create counter for value and set to 0
-    for each grade in the grades list
-        Check if current grade equals value being counted
-            If so, add ONE to counter for value
+    for each grade in the grades list:
+        if current grade equals value being counted:
+            Add ONE to counter for value
 
     Display counter for this value
     
-    Check if counter is higher than highest number of instances:
+    if counter is higher than highest number of instances:
         Set highest number of instances equal to this counter
         Set most frequent grade to the current grade
  
