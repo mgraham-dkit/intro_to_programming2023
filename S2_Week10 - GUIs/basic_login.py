@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.font import *
 
 '''
     EXERCISE:
@@ -30,18 +31,20 @@ user = ("admin", "password")
 
 window = Tk()
 window.title("Intro GUI")
-window.geometry("300x400")
+window.geometry("400x300")
 
-login_label = Label(window, text="My name is????")
+font_label_setting = Font(window, size=25, family="Arial")
+
+login_label = Label(window, text="My name is????", font=font_label_setting)
 login_label.pack()
 
 login_field = Entry(window)
 login_field.pack()
 
-login_button = Button(window, text="Submit", command=login)
+login_button = Button(window, text="Submit", command=login, font=font_label_setting)
 login_button.pack()
 
-status_label = Label(window, text="Status: Not logged in.")
+status_label = Label(window, text="Status: Not logged in.", font=font_label_setting)
 status_label.pack()
 
 window.mainloop()
