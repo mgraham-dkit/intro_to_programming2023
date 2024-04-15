@@ -18,8 +18,12 @@ from tkinter import *
 def login():
     print("I'm running!!!")
     entered_username = login_field.get()
-    if entered_username == user[0]:
+    if entered_username == "":
+        status_label["text"] = "Error: No information entered!"
+    elif entered_username == user[0]:
         status_label["text"] = "Status: Logged in!"
+    else:
+        status_label["text"] = "Status: Username not valid!"
 
 
 user = ("admin", "password")
