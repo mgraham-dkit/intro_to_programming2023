@@ -2,6 +2,13 @@ from tkinter import *
 from tkinter.font import *
 from tkinter import messagebox
 
+'''
+    Amend this program to:
+        a) Have a second frame that shows when they log in.
+        b) Add a button to this new frame that says "Back to log in"
+        c) When the button is clicked, hide this frame and show the original login frame
+'''
+
 
 def login():
     print("I'm running!!!")
